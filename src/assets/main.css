@@ -1,0 +1,68 @@
+@import './base.css';
+@import '@splidejs/vue-splide/css';
+@import '@splidejs/vue-splide/css/skyblue';
+@import '@splidejs/vue-splide/css/sea-green';
+@import '@splidejs/vue-splide/css/core';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(3, 17rem);
+  justify-items: center;
+  justify-content: center;
+}
+
+li {
+  display: flex;
+  background: #fff;
+  text-align: center;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+  list-style: none;
+  width: 80%;
+  aspect-ratio: 3 / 4;
+}
+
+button {
+  padding: 10px;
+  background-color: deepskyblue;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+button:hover {
+  background-color: rgb(110, 219, 255);
+}
+
+@media screen and (max-width: 768px) {
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+}
